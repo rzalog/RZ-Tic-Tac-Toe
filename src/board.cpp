@@ -15,7 +15,7 @@ Board::Board(Graphics* graphics)
 	m_creationSuccess = true;
 	m_renderer = graphics->getRenderer();
 	m_gameStatus = MENU_SCREEN;
-	m_turn = O_TURN;
+	m_turn = O_STATE;
 
 		// set board to all blank
 	clearBoard();
@@ -61,6 +61,7 @@ void Board::drawBoard()
 
 void Board::handleEvent(const SDL_Event& event)
 {
+	// key was pressed
 	if (event.type == SDL_KEYDOWN) {
 		switch (event.key.keysym.scancode)
 		{
@@ -70,6 +71,24 @@ void Board::handleEvent(const SDL_Event& event)
 				break;
 			default:
 				break;
+		}
+	}
+
+	// mouse was clicked
+	else if (event.type == SDL_MOUSEBUTTONDOWN && event.button.button == SDL_BUTTON_LEFT) {
+		// check if an icon was clicked
+		int mousex = event.button.x;
+		int mousey = event.button.y;
+
+		printf("Mouse x: %d\nMouse y: %d\n", mousex, mousey);
+
+		for (int r = 0; r < globals::ROWS; r++) {
+			for (int c = 0; c < globals::COLS; c++) {
+				if (m_iconStates[r][c] == BLANK_STATE && isPointInRect(mousex, mousey, m_iconRects[r][c])) {
+					m_iconStates[r][c] = m_turn;
+					m_turn = (m_turn == O_STATE) ? X_STATE : O_STATE;
+				}
+			}
 		}
 	}
 }

@@ -50,17 +50,11 @@ enum IconRects {
 	TOTAL_ICON_RECTS
 };
 
-// to keep track of which icons contain what
+// to keep track of which icons contain what, and keep track of the turn
 enum IconState {
 	O_STATE,
 	X_STATE,
 	BLANK_STATE
-};
-
-// to keep track of which turn it is
-enum TurnStatus {
-	O_TURN,
-	X_TURN
 };
 
 // for our icon array
@@ -123,7 +117,7 @@ private:
 		// which icons contain which symbols
 	IconState m_iconStates[globals::ROWS][globals::COLS];
 		// whose turn it is, circle or square
-	TurnStatus m_turn;
+	IconState m_turn;
 		// game status, menu or actually playing
 	GameStatus m_gameStatus;
 

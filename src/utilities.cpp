@@ -30,5 +30,6 @@ SDL_Texture* loadImage(std::string path, SDL_Renderer* renderer)
 
 bool isPointInRect(int x, int y, const SDL_Rect& rect)
 {
-	return true;
+	// x, y coordinates are within the bounds of the rectangle
+	return ( (x > rect.x && x < rect.x + rect.w) && (y > rect.y && y < rect.y + rect.h) );
 }
