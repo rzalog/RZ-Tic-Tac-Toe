@@ -1,0 +1,16 @@
+What the game needs:
+
+Board class
+
+Public:
+
+Private:
+
+
+TODO list:
+	* implement a menu screen
+		- option of one or two players
+	* implement an AI, for one player option
+
+
+

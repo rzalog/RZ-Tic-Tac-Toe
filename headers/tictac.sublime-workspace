@@ -1,0 +1,2140 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"renderer",
+				"renderer"
+			],
+			[
+				"m_",
+				"m_window	(graphics.cpp)"
+			],
+			[
+				"SCREEN",
+				"SCREEN_HEIGHT	(globals.h)"
+			],
+			[
+				"globals",
+				"globals::COLS	(board.h)"
+			],
+			[
+				"global",
+				"globals::ROWS	(board.h)"
+			],
+			[
+				"glb",
+				"globals::ROWS	(board.h)"
+			],
+			[
+				"click",
+				"clickedOn	(board.h)"
+			],
+			[
+				"m_sprite",
+				"m_spriteSheet	(sprite.h)"
+			],
+			[
+				"pos",
+				"posY	(sprite.h)"
+			],
+			[
+				"get",
+				"getRenderer	(graphics.h)"
+			],
+			[
+				"source",
+				"sourceRectangle"
+			],
+			[
+				"lo",
+				"loadImage	(graphics.h)"
+			],
+			[
+				"gra",
+				"Graphics"
+			],
+			[
+				"SD",
+				"SDL_Surface	(graphics.h)"
+			],
+			[
+				"was",
+				"wasKeyPressed	(input.h)"
+			],
+			[
+				"SDL",
+				"SDL_Scancode"
+			],
+			[
+				"includ",
+				"INCLUDE_FLAGS"
+			],
+			[
+				"Com",
+				"COMPILER_FLAGS"
+			],
+			[
+				"OBJ",
+				"OBJ_NAME"
+			],
+			[
+				"OB",
+				"OBJ_NAME"
+			],
+			[
+				"nRobot",
+				"nRobotsAt"
+			],
+			[
+				"nRobo",
+				"nRobotsAt"
+			],
+			[
+				"attac",
+				"attackRobotAt"
+			],
+			[
+				"getF",
+				"getFGM	(player.h)"
+			],
+			[
+				"remove",
+				"removeCharFromString	(helpers.cpp)"
+			],
+			[
+				"ss",
+				"ss"
+			],
+			[
+				"field",
+				"fieldGoalAttempts	(player.cpp)"
+			],
+			[
+				"fieldGoal",
+				"fieldGoalMakes"
+			],
+			[
+				"player",
+				"playerName"
+			],
+			[
+				"stats",
+				"statsStruct"
+			],
+			[
+				"return",
+				"return"
+			],
+			[
+				"navigate",
+				"navigateRouteCHECK"
+			],
+			[
+				"naviga",
+				"navigateRouteCHECK"
+			],
+			[
+				"print",
+				"printStuff"
+			],
+			[
+				"returnA",
+				"returnAndDeleteRouteSegmentCHECK"
+			],
+			[
+				"retur",
+				"returnAndDeleteRouteSegmentCHECK"
+			],
+			[
+				"routeSE",
+				"routeSegment"
+			],
+			[
+				"routeSe",
+				"routeSegmentStarted"
+			],
+			[
+				"isRoute",
+				"isRouteWellFormed"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"navi",
+				"navigateSegment"
+			],
+			[
+				"route",
+				"route"
+			],
+			[
+				"isRouteW",
+				"isRouteWellFormedCHECK"
+			],
+			[
+				"steps",
+				"stepsTaken"
+			],
+			[
+				"isRou",
+				"isRouteWellFormedCHECK"
+			],
+			[
+				"num",
+				"numConsecutiveDigits"
+			],
+			[
+				"fp",
+				"FPSCLOCK"
+			],
+			[
+				"BOX",
+				"BOXSIZE"
+			],
+			[
+				"BOARD",
+				"BOARDWIDTH"
+			],
+			[
+				"left",
+				"leftTopCoordsOfBox"
+			],
+			[
+				"NU",
+				"numIconsUsed"
+			],
+			[
+				"BOA",
+				"BOARDHEIGHT"
+			],
+			[
+				"ALL",
+				"ALL_SHAPES"
+			],
+			[
+				"FPS",
+				"FPSCLOCK"
+			],
+			[
+				"reve",
+				"revealedBoxes"
+			],
+			[
+				"main",
+				"mainBoard"
+			],
+			[
+				"first",
+				"firstSelection"
+			],
+			[
+				"WINDO",
+				"WINDOWHEIGHT"
+			],
+			[
+				"BOAR",
+				"BOARDHEIGHT"
+			],
+			[
+				"all",
+				"ALL_SHAPES"
+			],
+			[
+				"WINDOW",
+				"WINDOWWIDTH"
+			],
+			[
+				"Bo",
+				"BOARDWIDTH"
+			],
+			[
+				"Boar",
+				"BOARDHEIGHT"
+			],
+			[
+				"WIND",
+				"WINDOWHEIGHT"
+			],
+			[
+				"wind",
+				"WINDOWWIDTH"
+			],
+			[
+				"displ",
+				"display_surface"
+			],
+			[
+				"board",
+				"BOARDWIDTH"
+			],
+			[
+				"lap_count",
+				"lap_counter_rect"
+			],
+			[
+				"lap_label",
+				"lap_label_rect"
+			],
+			[
+				"make",
+				"make_lap_counter"
+			],
+			[
+				"lap_num",
+				"lap_num_rect"
+			],
+			[
+				"lap_lab",
+				"lap_label_rect"
+			],
+			[
+				"lap",
+				"lap_counter_rect"
+			],
+			[
+				"text",
+				"text_rect_obj"
+			],
+			[
+				"font",
+				"font_obj"
+			],
+			[
+				"bott",
+				"bottom_limit"
+			],
+			[
+				"right",
+				"right_limit"
+			],
+			[
+				"displa",
+				"DISPLAYSURF"
+			],
+			[
+				"creat",
+				"create_rect"
+			],
+			[
+				"bla",
+				"BLACK"
+			],
+			[
+				"set",
+				"set_mode	(blankpygame.py)"
+			],
+			[
+				"yes",
+				"yes_or_no"
+			],
+			[
+				"name",
+				"namespace	(royalty.cpp)"
+			],
+			[
+				"three",
+				"THREE_HYPHENS"
+			],
+			[
+				"next",
+				"NEXT_800_RATE_REG"
+			],
+			[
+				"NEX",
+				"NEXT_800_RATE_REG"
+			],
+			[
+				"RATE",
+				"RATE_FOR_NEXT_400_REG"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"menu",
+				"menu_options"
+			],
+			[
+				"test",
+				"test_cust"
+			],
+			[
+				"a",
+				"a"
+			],
+			[
+				"prompt",
+				"promptForNewValue"
+			],
+			[
+				"wallet",
+				"wallet1"
+			],
+			[
+				"op",
+				"operator"
+			],
+			[
+				"clear",
+				"clearExcessInput"
+			],
+			[
+				"prom",
+				"promptForNewValue"
+			],
+			[
+				"cl",
+				"class_size"
+			],
+			[
+				"reverse",
+				"reverseArray"
+			],
+			[
+				"rect",
+				"rect_to_polar"
+			],
+			[
+				"trav",
+				"travel_time"
+			],
+			[
+				"build",
+				"buildstr"
+			],
+			[
+				"bo",
+				"bopname"
+			],
+			[
+				"ch",
+				"ch"
+			],
+			[
+				"Fa",
+				"FAVE"
+			],
+			[
+				"NUM",
+				"NUM_YEARS"
+			],
+			[
+				"nu",
+				"NUM_YEARS"
+			],
+			[
+				"month",
+				"month_names"
+			],
+			[
+				"ar",
+				"AR_SIZE"
+			],
+			[
+				"C",
+				"Cities"
+			],
+			[
+				"m",
+				"MAX"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"si",
+				"SIZE"
+			],
+			[
+				"size",
+				"SIZE_OF_ARRAY"
+			],
+			[
+				"count",
+				"count_vowels"
+			],
+			[
+				"amt",
+				"amt_pairs"
+			],
+			[
+				"com",
+				"company"
+			],
+			[
+				"dis",
+				"disp_candy"
+			],
+			[
+				"in",
+				"inflatable"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/rzalog/programming/SDL2/tictac/src/Makefile",
+			"settings":
+			{
+				"buffer_size": 863,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rzalog/programming/SDL2/tictac/plan.txt",
+			"settings":
+			{
+				"buffer_size": 984,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rzalog/programming/SDL2/tictac/src/main.cpp",
+			"settings":
+			{
+				"buffer_size": 78,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rzalog/programming/SDL2/tictac/src/game.cpp",
+			"settings":
+			{
+				"buffer_size": 725,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rzalog/programming/SDL2/tictac/src/board.cpp",
+			"settings":
+			{
+				"buffer_size": 603,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "board.h",
+			"settings":
+			{
+				"buffer_size": 737,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rzalog/programming/SDL2/tictac/src/graphics.cpp",
+			"settings":
+			{
+				"buffer_size": 305,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "graphics.h",
+			"settings":
+			{
+				"buffer_size": 243,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "game.h",
+			"settings":
+			{
+				"buffer_size": 409,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "globals.h",
+			"settings":
+			{
+				"buffer_size": 265,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"ANF: Copy Current File"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"pack",
+				"Package Control: Discover Packages"
+			],
+			[
+				"package control: sea",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"dd"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rzalog/programming/SDL2/tictac",
+		"/Users/rzalog/programming/SDL2/tictac/src"
+	],
+	"file_history":
+	[
+		"/Users/rzalog/programming/SDL2/tictac/headers/globals.h",
+		"/Users/rzalog/programming/SDL2/tictac/headers/game.h",
+		"/Users/rzalog/programming/SDL2/tictac/src/game.cpp",
+		"/Users/rzalog/programming/SDL2/tictac/src/main.cpp",
+		"/Users/rzalog/programming/SDL2/tictac/src/Makefile",
+		"/Users/rzalog/programming/SDL2/cavestory/headers/game.h",
+		"/Users/rzalog/programming/SDL2/cavestory/src/Makefile",
+		"/Users/rzalog/programming/SDL2/cavestory/src/test.cpp",
+		"/Users/rzalog/programming/SDL2/cavestory/src/sprite.cpp",
+		"/Users/rzalog/programming/SDL2/cavestory/src/graphics.cpp",
+		"/Users/rzalog/programming/SDL2/cavestory/src/main.cpp",
+		"/usr/local/include/SDL2/sdl_image.h",
+		"/Users/rzalog/programming/SDL2/cavestory/cavestory.sublime-project",
+		"/Users/rzalog/programming/SDL2/cavestory/headers/graphics.h",
+		"/Users/rzalog/programming/SDL2/cavestory/src/makefile",
+		"/Users/rzalog/programming/SDL2/cavestory/main.cpp",
+		"/Users/rzalog/programming/SDL2/cavestory/makefile",
+		"/Users/rzalog/programming/SDL2/cavestory/main",
+		"/Users/rzalog/.bash_profile",
+		"/Users/rzalog/programming/cpp/cppgame/cavestory/main.cpp",
+		"/Users/rzalog/programming/cpp/cppgame/cavestory/makefile",
+		"/usr/local/Cellar/sdl2/2.0.3/include/SDL2/SDL.h",
+		"/usr/local/include/SDL2/SDL.h",
+		"/Users/rzalog/programming/cpp/cppgame/cavestory/usr/local/include/SDL2/SDL.h",
+		"/Users/rzalog/programming/projects/webdev/firstsite/stylesheet.css",
+		"/Users/rzalog/programming/projects/webdev/firstsite/test.html",
+		"/Users/rzalog/programming/projects/webdev/firstsite/teststyle.css",
+		"/Users/rzalog/programming/projects/webdev/personalsite/main.html",
+		"/Users/rzalog/programming/SCHOOL/cs31/project4/array.cpp",
+		"/Users/rzalog/programming/SCHOOL/cs31/PEER_REVIEW.txt",
+		"/Users/rzalog/programming/projects/projects_py/pygame/randombox/randbox.py",
+		"/Users/rzalog/programming/notes/cs31/lect13.txt",
+		"/Users/rzalog/programming/notes/cs31/lect14.txt",
+		"/Users/rzalog/programming/notes/cs31/lect15.txt",
+		"/Users/rzalog/programming/notes/cs31/pointers.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/project7/robots.cpp",
+		"/Users/rzalog/programming/SCHOOL/cs31/project7/README.md",
+		"/Users/rzalog/programming/SCHOOL/cs31/project7/plan.txt",
+		"/Users/rzalog/Downloads/template.tex",
+		"/Users/rzalog/programming/SCHOOL/cs31/project6",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/team.h",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/tools.cpp",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/plan.txt",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/helpers.h",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/helpers.cpp",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/test.cpp",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/parser.h",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/parser.cpp",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/format.txt",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/tools.h",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/planning.txt",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/player.h",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/player.cpp",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/team.cpp",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/a.out",
+		"/Users/rzalog/programming/projects/projects_cpp/fantasy_bball/test_file.txt",
+		"/Users/rzalog/programming/notes/cs31/lect11.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/project3/report.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/project3/maze.cpp",
+		"/Users/rzalog/programming/notes/cs31/lect10.txt",
+		"/Users/rzalog/programming/notes/cs31/lect9.txt",
+		"/Users/rzalog/programming/notes/github_basic.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/project3/README.md",
+		"/Users/rzalog/programming/SCHOOL/cs31/project3/planning.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/project3/grid.cpp",
+		"/Users/rzalog/programming/SCHOOL/cs31/project3/grid.h",
+		"/Users/rzalog/programming/notes/cs31/disc3.txt",
+		"/Users/rzalog/programming/notes/cs31/midterm1review.txt",
+		"/Users/rzalog/programming/notes/cs31/lect8.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/project2/hw.txt",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch3/memorypuzzle.py",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch2/drawing.py",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch3/mymempuzzle.py",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch2/catanimation.py",
+		"/Users/rzalog/programming/SCHOOL/cs31/project2/royalty.cpp",
+		"/Users/rzalog/programming/notes/cs31/test.cpp",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch3/puzzle.py",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch3/mymemorypuzzle.py",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch3/memory",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch2/fonttext.py",
+		"/Users/rzalog/programming/notes/cs31/lect7.txt",
+		"/Users/rzalog/programming/python/pygame_tutorial/ch2/blankpygame.py",
+		"/Users/rzalog/programming/school/cs31/project2/report.txt",
+		"/Users/rzalog/programming/notes/cs31/lect6.txt",
+		"/Users/rzalog/programming/python/pygame_tutorial/test.py",
+		"/Users/rzalog/programming/school/cs31/project2/royalty.cpp",
+		"/Users/rzalog/programming/school/cs31/project2/test.cpp",
+		"/Users/rzalog/programming/school/cs31/project2/hw.txt",
+		"/Users/rzalog/programming/school/cs31/QUESTIONS.txt",
+		"/Users/rzalog/programming/notes/cs31/lect5.txt",
+		"/Users/rzalog/programming/notes/cs31/disc2.txt",
+		"/Users/rzalog/programming/cpp/cpp-book/ch7/7.10.cpp",
+		"/Users/rzalog/programming/cpp/cpp-book/ch7/7.18.cpp",
+		"/Users/rzalog/programming/notes/cs31/lect4.txt",
+		"/Users/rzalog/programming/cpp/cpp-book/ch7/7.17.cpp",
+		"/Users/rzalog/programming/cpp/cpp-book/ch7/7.16.cpp",
+		"/Users/rzalog/programming/cpp/owncode/test.cpp",
+		"/Users/rzalog/programming/school/cs31/project1/report.txt",
+		"/Users/rzalog/programming/cpp/projects/store/helpers.cpp",
+		"/Users/rzalog/programming/cpp/projects/store/menu.cpp",
+		"/Users/rzalog/programming/cpp/projects/store/store.cpp",
+		"/Users/rzalog/programming/school/cs31/project1/logic_error.cpp",
+		"/Users/rzalog/programming/school/cs31/project1/compile_error.cpp",
+		"/Users/rzalog/programming/notes/cs31/lect3.txt",
+		"/Users/rzalog/programming/cpp/projects/store/customer.cpp",
+		"/Users/rzalog/programming/school/cs31/project1/logic_error.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/REQS.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/original.cpp",
+		"/Users/rzalog/programming/SCHOOL/cs31/report.txt",
+		"/Users/rzalog/programming/SCHOOL/cs31/compile_error.cpp",
+		"/Users/rzalog/programming/SCHOOL/cs31/logic_error.cpp",
+		"/Users/rzalog/programming/notes/cs31/disc1.txt",
+		"/Users/rzalog/programming/school/cs31/TEST_STUFF/hello.cpp",
+		"/Users/rzalog/programming/school/cs31/TEST_STUFF/calc_salary.cpp",
+		"/Users/rzalog/programming/school/cs31/TEST_STUFF/namespace_ex.cpp",
+		"/Users/rzalog/programming/notes/cs31/lect2.txt",
+		"/Users/rzalog/programming/notes/cs1/disc1.txt",
+		"/Users/rzalog/programming/notes/cs31/lect1.txt",
+		"/Users/rzalog/programming/abbey/15.cpp",
+		"/Users/rzalog/programming/python/projects/store/store.py",
+		"/Users/rzalog/programming/cpp/projects/store/test.cpp",
+		"/Users/rzalog/programming/cpp/projects/store/store.h",
+		"/Users/rzalog/programming/cpp/projects/store/option.h",
+		"/Users/rzalog/programming/cpp/projects/store/option.cpp",
+		"/Users/rzalog/programming/cpp/projects/store/menu.h",
+		"/Users/rzalog/programming/cpp/projects/store/helpers.h",
+		"/Users/rzalog/programming/cpp/projects/store/customer.h",
+		"/Users/rzalog/programming/cpp/projects/store/README.md"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"parser.cpp"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lib",
+			"objects",
+			"padding",
+			"href",
+			">",
+			"cout",
+			"cerr",
+			"determineNewPosition",
+			"stand",
+			"false",
+			"m_canTakeHit",
+			"    ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"                                                        ",
+			"                                                       ",
+			"                                                      ",
+			"                                                     ",
+			"                                                    ",
+			"                                                   ",
+			"                                                  ",
+			"                                                 ",
+			"                                                ",
+			"                                               ",
+			"                                              ",
+			"                                             ",
+			"                                            ",
+			"                                           ",
+			"                                          ",
+			"                                         ",
+			"                                        ",
+			"                                       ",
+			"                                      ",
+			"                                     ",
+			"                                    ",
+			"                                   ",
+			"                                  ",
+			"                                 ",
+			"                                ",
+			"                               ",
+			"                              ",
+			"                             ",
+			"                            ",
+			"                           ",
+			"                          ",
+			"                         ",
+			"                        ",
+			"                       ",
+			"                      ",
+			"                     ",
+			"                    ",
+			"                   ",
+			"                  ",
+			"                 ",
+			"                ",
+			"               ",
+			"              ",
+			"             ",
+			"            ",
+			"           ",
+			"          ",
+			"         ",
+			"        ",
+			"       ",
+			"      ",
+			"     ",
+			"    ",
+			"TAB",
+			"'\\t'",
+			"())",
+			"to_string(",
+			"()",
+			"get",
+			"giveFormattedPlayerInfo",
+			"std::",
+			"cout",
+			"endl",
+			"MAX_SIZE",
+			"Player::",
+			"trash",
+			"string",
+			"myFile",
+			"name",
+			"int",
+			"cin",
+			"cout",
+			"nsteps",
+			"isWal",
+			"isWall",
+			"robot",
+			"0",
+			"cout",
+			"Functoin",
+			"checkNumDigits",
+			"finalString",
+			"removeNonDigitChars",
+			"userPhoneNumber",
+			"||",
+			"drawboxco",
+			"getBox",
+			"lap_label_rect",
+			"counter",
+			"up_limit",
+			"bottom_limit",
+			"left_limit",
+			"right_limit",
+			"yspeed",
+			"xspeed",
+			"5",
+			"dispsurf",
+			"displaysurf",
+			"84",
+			"600",
+			"==",
+			"NEXT_800_RATE_REG",
+			"100",
+			"hello",
+			"threeHyphens",
+			"userState",
+			"products",
+			"void disp_products( vector< pair<string, double> > products)\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"placeholder"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 9,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/rzalog/programming/SDL2/tictac/src/Makefile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/Makefile/Makefile.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/rzalog/programming/SDL2/tictac/plan.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								654,
+								654
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/rzalog/programming/SDL2/tictac/src/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 78,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/rzalog/programming/SDL2/tictac/src/game.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 725,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 89.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/rzalog/programming/SDL2/tictac/src/board.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								129,
+								129
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "board.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								321,
+								321
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 46.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/rzalog/programming/SDL2/tictac/src/graphics.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								303,
+								303
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "graphics.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 243,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								171,
+								171
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "game.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "globals.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"syntax": "Packages/C++/C++.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 25.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "tictac.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"make",
+				"src/Makefile"
+			],
+			[
+				"board.cp",
+				"src/board.cpp"
+			],
+			[
+				"board.h",
+				"headers/board.h"
+			],
+			[
+				"board.cpp",
+				"src/board.cpp"
+			],
+			[
+				"makef",
+				"src/Makefile"
+			],
+			[
+				"game.cpp",
+				"src/game.cpp"
+			],
+			[
+				"graphics.cpp",
+				"src/graphics.cpp"
+			],
+			[
+				"graphics.h",
+				"headers/graphics.h"
+			],
+			[
+				"",
+				"src/game.cpp"
+			],
+			[
+				"globa",
+				"headers/globals.h"
+			],
+			[
+				"globals.",
+				"headers/globals.h"
+			],
+			[
+				"graphics.c",
+				"src/graphics.cpp"
+			],
+			[
+				"game.cp",
+				"src/game.cpp"
+			],
+			[
+				"main.cp",
+				"src/main.cpp"
+			],
+			[
+				"grahpics.h",
+				"headers/graphics.h"
+			],
+			[
+				"makefil",
+				"src/Makefile"
+			],
+			[
+				"main.cpp",
+				"src/main.cpp"
+			],
+			[
+				"graphi",
+				"src/graphics.cpp"
+			],
+			[
+				"board",
+				"src/board.cpp"
+			],
+			[
+				"plan",
+				"plan.txt"
+			],
+			[
+				"sprite.cpp",
+				"src/sprite.cpp"
+			],
+			[
+				"sprite.cp",
+				"src/sprite.cpp"
+			],
+			[
+				"makefi",
+				"src/Makefile"
+			],
+			[
+				"graphics.cp",
+				"src/graphics.cpp"
+			],
+			[
+				"sprite.h",
+				"headers/sprite.h"
+			],
+			[
+				"game.h",
+				"headers/game.h"
+			],
+			[
+				"game.",
+				"headers/game.h"
+			],
+			[
+				"sprite",
+				"src/sprite.cpp"
+			],
+			[
+				"graphic.h",
+				"headers/graphics.h"
+			],
+			[
+				"spr",
+				"src/sprite.cpp"
+			],
+			[
+				"spri",
+				"headers/sprite.h"
+			],
+			[
+				"graphics",
+				"src/graphics.cpp"
+			],
+			[
+				"graph",
+				"headers/graphics.h"
+			],
+			[
+				"input",
+				"src/input.cpp"
+			],
+			[
+				"game.c",
+				"src/game.cpp"
+			],
+			[
+				"game",
+				"~/programming/SDL2/cavestory/src/game.cpp"
+			],
+			[
+				"main",
+				"~/programming/SDL2/cavestory/src/main.cpp"
+			],
+			[
+				"input.cpp",
+				"~/programming/SDL2/cavestory/src/input.cpp"
+			],
+			[
+				"input.h",
+				"~/programming/SDL2/cavestory/headers/input.h"
+			],
+			[
+				"input.",
+				"~/programming/SDL2/cavestory/headers/input.h"
+			],
+			[
+				"makel",
+				"~/programming/SDL2/cavestory/src/Makefile"
+			],
+			[
+				"arra",
+				"~/programming/SCHOOL/cs31/project4/array.cpp"
+			],
+			[
+				"player.",
+				"~/programming/projects/projects_cpp/fantasy_bball/player.cpp"
+			],
+			[
+				"parser",
+				"~/programming/projects/projects_cpp/fantasy_bball/parser.cpp"
+			],
+			[
+				"player",
+				"~/programming/projects/projects_cpp/fantasy_bball/player.cpp"
+			],
+			[
+				"helpers.",
+				"~/programming/projects/projects_cpp/fantasy_bball/helpers.cpp"
+			],
+			[
+				"parser.cpp",
+				"~/programming/projects/projects_cpp/fantasy_bball/player.cpp"
+			],
+			[
+				"paraser",
+				"~/programming/projects/projects_cpp/fantasy_bball/parser.h"
+			],
+			[
+				"play",
+				"~/programming/projects/projects_cpp/fantasy_bball/player.cpp"
+			],
+			[
+				"team.cpp",
+				"~/programming/projects/projects_cpp/fantasy_bball/team.cpp"
+			],
+			[
+				"team",
+				"~/programming/projects/projects_cpp/fantasy_bball/team.h"
+			],
+			[
+				"help",
+				"~/programming/projects/projects_cpp/fantasy_bball/helpers.cpp"
+			],
+			[
+				"test.c",
+				"~/programming/projects/projects_cpp/fantasy_bball/test.cpp"
+			],
+			[
+				"test",
+				"~/programming/projects/projects_cpp/fantasy_bball/test.cpp"
+			],
+			[
+				"test.cpp",
+				"~/programming/projects/projects_cpp/fantasy_bball/test.cpp"
+			],
+			[
+				"player.cpp",
+				"~/programming/projects/projects_cpp/fantasy_bball/player.cpp"
+			],
+			[
+				"tes",
+				"~/programming/projects/projects_cpp/fantasy_bball/test.cpp"
+			],
+			[
+				"report",
+				"~/programming/school/cs31/project2/report.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 87.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
