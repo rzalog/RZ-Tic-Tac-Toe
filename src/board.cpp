@@ -327,18 +327,14 @@ bool Board::loadMedia()
 		// game screens
 	m_screenTextures[MENU_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "menu_screen.png");
 	m_screenTextures[GAME_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "game_screen.png");
-		// flashing, color keyed
-	m_screenTextures[GAME_SCREEN_FLASH] = loadImage(m_renderer, CONTENT_PATH + "game_screen.png", true, FLASH_R, FLASH_G, FLASH_B);
 	m_screenTextures[O_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "o_win.png");
 	m_screenTextures[X_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "x_win.png");
 		// for when neither player wins
 	m_screenTextures[BLANK_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "blank_win.png");
 	m_screenTextures[RESTART_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "restart.png");
-		// icons, and flashing icons
+		// icons
 	m_iconTextures[O_TEXTURE] = loadImage(m_renderer, CONTENT_PATH + "o_icon.png");
 	m_iconTextures[X_TEXTURE] = loadImage(m_renderer, CONTENT_PATH + "x_icon.png");
-	m_iconTextures[O_TEXTURE_FLASH] = loadImage(m_renderer, CONTENT_PATH + "o_icon.png", true ,FLASH_R, FLASH_G, FLASH_B);
-	m_iconTextures[X_TEXTURE_FLASH] = loadImage(m_renderer, CONTENT_PATH + "x_icon.png", true ,FLASH_R, FLASH_G, FLASH_B);
 
 	bool success = true;
 	for (int i = 0; i < TOTAL_SCREENS; i++)

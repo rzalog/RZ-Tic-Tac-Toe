@@ -85,9 +85,7 @@ enum GameStatus {
 // for our icon array
 enum IconTextureIndex {
 	O_TEXTURE,
-	O_TEXTURE_FLASH,
 	X_TEXTURE,
-	X_TEXTURE_FLASH,
 	TOTAL_ICON_TEXTURES
 };
 
@@ -95,7 +93,6 @@ enum IconTextureIndex {
 enum ScreenTextureIndex {
 	MENU_SCREEN,
 	GAME_SCREEN,
-	GAME_SCREEN_FLASH,
 	O_WIN_SCREEN,
 	X_WIN_SCREEN,
 	BLANK_WIN_SCREEN,	// "win screen" for when neither player wins
