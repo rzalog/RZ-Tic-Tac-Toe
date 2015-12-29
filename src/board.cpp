@@ -53,14 +53,35 @@ void Board::drawBoard()
 		drawIcons();
 
 		if (isGameFinished()) {
-			printf("Game is done!\n");
 			m_gameStatus = GAME_FINISHED;
 		}
 	}
 	
 	else if (m_gameStatus == GAME_FINISHED) {
-			// give user time to look at final board
-		SDL_Delay(1000);
+			// flash the screen
+		bool flash = false;
+		for (int i = 0; i < 10; i++) {
+				// change the render draw color
+			if (flash) {
+					// teal-ish color
+				SDL_SetRenderDrawColor(m_renderer, 0x4E, 0xEA, 0xF2, 0xFF);
+				SDL_RenderClear(m_renderer);
+				flash = false;
+			}
+			else {
+				SDL_SetRenderDrawColor(m_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+				SDL_RenderClear(m_renderer);
+				flash = true;
+			}
+				
+				// draw the rest of the board
+			drawLines();
+			drawIcons();
+				// push the renderer to the screen
+			SDL_RenderPresent(m_renderer);
+				// wait half a second
+			SDL_Delay(500);
+		}
 
 			// find out who won, render the respective screen
 		if (m_winner == O_STATE) {
@@ -68,7 +89,7 @@ void Board::drawBoard()
 		}
 		else if (m_winner == X_STATE) {
 			SDL_RenderCopy(m_renderer, m_screenTextures[X_WIN_SCREEN], nullptr, nullptr);
-		}	
+		}
 			// if neither side won
 		else if (m_winner == BLANK_STATE) {
 				// note: BLANK_WIN_SCREEN is when neither player wins
@@ -305,16 +326,16 @@ bool Board::loadMedia()
 		// for CONTENT_PATH
 	using namespace globals;
 		// game screens
-	m_screenTextures[MENU_SCREEN] = loadImage((CONTENT_PATH + "menu_screen.png").c_str(), m_renderer);
-	m_screenTextures[GAME_SCREEN] = loadImage((CONTENT_PATH + "game_screen.png").c_str(), m_renderer);
-	m_screenTextures[O_WIN_SCREEN] = loadImage((CONTENT_PATH + "o_win.png").c_str(), m_renderer);
-	m_screenTextures[X_WIN_SCREEN] = loadImage((CONTENT_PATH + "x_win.png").c_str(), m_renderer);
+	m_screenTextures[MENU_SCREEN] = loadImage(CONTENT_PATH + "menu_screen.png", m_renderer);
+	m_screenTextures[GAME_SCREEN] = loadImage(CONTENT_PATH + "game_screen.png", m_renderer);
+	m_screenTextures[O_WIN_SCREEN] = loadImage(CONTENT_PATH + "o_win.png", m_renderer);
+	m_screenTextures[X_WIN_SCREEN] = loadImage(CONTENT_PATH + "x_win.png", m_renderer);
 		// for when neither player wins
-	m_screenTextures[BLANK_WIN_SCREEN] = loadImage((CONTENT_PATH + "blank_win.png").c_str(), m_renderer);
-	m_screenTextures[RESTART_SCREEN] = loadImage((CONTENT_PATH + "restart.png").c_str(), m_renderer);
+	m_screenTextures[BLANK_WIN_SCREEN] = loadImage(CONTENT_PATH + "blank_win.png", m_renderer);
+	m_screenTextures[RESTART_SCREEN] = loadImage(CONTENT_PATH + "restart.png", m_renderer);
 		// icons
-	m_iconTextures[O_TEXTURE] = loadImage((CONTENT_PATH + "o_icon.png").c_str(), m_renderer);
-	m_iconTextures[X_TEXTURE] = loadImage((CONTENT_PATH + "x_icon.png").c_str(), m_renderer);
+	m_iconTextures[O_TEXTURE] = loadImage(CONTENT_PATH + "o_icon.png", m_renderer);
+	m_iconTextures[X_TEXTURE] = loadImage(CONTENT_PATH + "x_icon.png", m_renderer);
 
 	bool success = true;
 	for (int i = 0; i < TOTAL_SCREENS; i++)
