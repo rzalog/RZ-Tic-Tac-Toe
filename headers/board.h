@@ -64,10 +64,30 @@ enum IconTextureIndex {
 	TOTAL_ICON_TEXTURES
 };
 
-// keep track of which gamescreen
+// keep track of the game state
 enum GameStatus {
+	MENU,
+	BOARD,
+	GAME_FINISHED,
+	ASK_RESTART,
+	TOTAL_STATES
+};
+
+// keep track of screen textures
+enum ScreenTextureIndex {
 	MENU_SCREEN,
-	GAME_SCREEN
+	GAME_SCREEN,
+	O_WIN_SCREEN,
+	X_WIN_SCREEN,
+	BLANK_WIN_SCREEN,	// "win screen" for when neither player wins
+	RESTART_SCREEN,
+	TOTAL_SCREENS
+};
+
+// keep track of who wins
+enum Player {
+	PLAYER_O,
+	PLAYER_X
 };
 
 
@@ -88,8 +108,20 @@ public:
 	bool wasCreationSuccessful();
 
 private:
-		// fills in a given square on the board with a given type of icon
-	void fillSquare(int r, int c, IconState icon);
+		// initializes an empty board
+	void initEmptyBoard();
+		// does things when the game is over
+	void gameOver();
+		// checks if game is finished
+	bool isGameFinished();
+		// checks if 3 in a row on the board
+			// if there is, updates the winner, returns true
+			// otherwise, returns false
+	bool hasPlayerWon();
+		// checks if board contains blank space
+	bool containsBlankSpace();
+
+	/* Graphics functions */
 
 		// draws the lines on the board
 	void drawLines();
@@ -105,9 +137,9 @@ private:
 		// loads in media
 	bool loadMedia();
 
+	/* Data members */
 		// SDL textures
-	SDL_Texture* m_menuScreen;
-	SDL_Texture* m_gameScreen;
+	SDL_Texture* m_screenTextures[TOTAL_SCREENS];
 	SDL_Texture* m_iconTextures[TOTAL_ICON_TEXTURES];
 
 		// all the SDL_Rect's on the board
@@ -120,6 +152,8 @@ private:
 	IconState m_turn;
 		// game status, menu or actually playing
 	GameStatus m_gameStatus;
+		// which player has won
+	IconState m_winner;
 
 		// successful creation flag
 	bool m_creationSuccess;

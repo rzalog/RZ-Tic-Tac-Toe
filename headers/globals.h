@@ -2,6 +2,7 @@
 #define __GLOBALS_H__
 
 #include <SDL2/SDL_image.h>
+#include <string>
 
 namespace globals {
 	const char GAME_TITLE[] = "Tic-Tac-Toe";
@@ -16,6 +17,8 @@ namespace globals {
 
 	const int ROWS = 3;
 	const int COLS = 3;
+
+	const std::string CONTENT_PATH = "../content/";
 }
 
 #endif

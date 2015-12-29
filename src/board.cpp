@@ -1,6 +1,7 @@
 // board.cpp -- Contains the board class that handles game events
 
 #include <SDL2/SDL.h>
+#include <cstring>
 #include "board.h"
 #include "graphics.h"
 #include "utilities.h"
@@ -11,14 +12,10 @@
 
 Board::Board(Graphics* graphics)
 {
-		// initialize private data members
-	m_creationSuccess = true;
 	m_renderer = graphics->getRenderer();
-	m_gameStatus = MENU_SCREEN;
-	m_turn = O_STATE;
-
-		// set board to all blank
-	clearBoard();
+		// initEmptyBoardialize data members for an empty board
+	initEmptyBoard();
+	m_gameStatus = MENU;
 
 		// get all the SDL_Rect objects we need
 	generateLineRects();
@@ -34,8 +31,8 @@ Board::Board(Graphics* graphics)
 Board::~Board()
 {
 		// destroy textures
-	SDL_DestroyTexture(m_menuScreen);
-	SDL_DestroyTexture(m_gameScreen);
+	for (int i = 0; i < TOTAL_SCREENS; i++)
+		SDL_DestroyTexture(m_screenTextures[i]);
 	for (int i = 0; i < TOTAL_ICON_TEXTURES; i++)
 		SDL_DestroyTexture(m_iconTextures[i]);
 }
@@ -45,15 +42,46 @@ void Board::drawBoard()
 	SDL_SetRenderDrawColor(m_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
 	SDL_RenderClear(m_renderer);
 
-	if (m_gameStatus == MENU_SCREEN) {
-		SDL_RenderCopy(m_renderer, m_menuScreen, nullptr, nullptr);
+	if (m_gameStatus == MENU) {
+		SDL_RenderCopy(m_renderer, m_screenTextures[MENU_SCREEN], nullptr, nullptr);
 	}
-	else if (m_gameStatus == GAME_SCREEN) {
-		SDL_RenderCopy(m_renderer, m_gameScreen, nullptr, nullptr);
+	else if (m_gameStatus == BOARD) {
+		SDL_RenderCopy(m_renderer, m_screenTextures[GAME_SCREEN], nullptr, nullptr);
 
 			// draw the lines on the board
 		drawLines();
 		drawIcons();
+
+		if (isGameFinished()) {
+			printf("Game is done!\n");
+			m_gameStatus = GAME_FINISHED;
+		}
+	}
+	
+	else if (m_gameStatus == GAME_FINISHED) {
+			// give user time to look at final board
+		SDL_Delay(1000);
+
+			// find out who won, render the respective screen
+		if (m_winner == O_STATE) {
+			SDL_RenderCopy(m_renderer, m_screenTextures[O_WIN_SCREEN], nullptr, nullptr);
+		}
+		else if (m_winner == X_STATE) {
+			SDL_RenderCopy(m_renderer, m_screenTextures[X_WIN_SCREEN], nullptr, nullptr);
+		}	
+			// if neither side won
+		else if (m_winner == BLANK_STATE) {
+				// note: BLANK_WIN_SCREEN is when neither player wins
+			SDL_RenderCopy(m_renderer, m_screenTextures[BLANK_WIN_SCREEN], nullptr, nullptr);
+		}
+			// update the renderer
+		SDL_RenderPresent(m_renderer);
+			// let the user look at the win screen
+		SDL_Delay(1000);
+
+			// initialize empty board
+		initEmptyBoard();
+		m_gameStatus = BOARD;
 	}
 
 	SDL_RenderPresent(m_renderer);
@@ -66,9 +94,13 @@ void Board::handleEvent(const SDL_Event& event)
 		switch (event.key.keysym.scancode)
 		{
 			case SDL_SCANCODE_T:
-				if (m_gameStatus == MENU_SCREEN)
-					m_gameStatus = GAME_SCREEN;
+				if (m_gameStatus == MENU)
+					m_gameStatus = BOARD;
 				break;
+			case SDL_SCANCODE_R:
+				if (m_gameStatus == BOARD)
+					initEmptyBoard();
+
 			default:
 				break;
 		}
@@ -76,17 +108,19 @@ void Board::handleEvent(const SDL_Event& event)
 
 	// mouse was clicked
 	else if (event.type == SDL_MOUSEBUTTONDOWN && event.button.button == SDL_BUTTON_LEFT) {
-		// check if an icon was clicked
-		int mousex = event.button.x;
-		int mousey = event.button.y;
+			// if user is on the game board, then we want to check if they clicked an icon
+		if (m_gameStatus == BOARD) {
+				// check if an icon was clicked
+			int mousex = event.button.x;
+			int mousey = event.button.y;
 
-		printf("Mouse x: %d\nMouse y: %d\n", mousex, mousey);
-
-		for (int r = 0; r < globals::ROWS; r++) {
-			for (int c = 0; c < globals::COLS; c++) {
-				if (m_iconStates[r][c] == BLANK_STATE && isPointInRect(mousex, mousey, m_iconRects[r][c])) {
-					m_iconStates[r][c] = m_turn;
-					m_turn = (m_turn == O_STATE) ? X_STATE : O_STATE;
+			for (int r = 0; r < globals::ROWS; r++) {
+				for (int c = 0; c < globals::COLS; c++) {
+					if (m_iconStates[r][c] == BLANK_STATE && isPointInRect(mousex, mousey, m_iconRects[r][c])) {
+						printf("Changing icon...\n");
+						m_iconStates[r][c] = m_turn;
+						m_turn = (m_turn == O_STATE) ? X_STATE : O_STATE;
+					}
 				}
 			}
 		}
@@ -98,8 +132,101 @@ bool Board::wasCreationSuccessful()
 	return m_creationSuccess;
 }
 
+///////////////////////////////////////////////////////////
+// Private member functions
+///////////////////////////////////////////////////////////
+
+void Board::initEmptyBoard()
+{
+		// initialize private data members
+	m_creationSuccess = true;
+	m_turn = O_STATE;
+	m_winner = BLANK_STATE;
+
+		// set board to all blank
+	clearBoard();
+}
+
+void Board::gameOver()
+{
+
+}
+
+bool Board::isGameFinished()
+{
+	bool finished = false;
+	
+		// if one player got 3 in a row, the game is finished.
+	if (hasPlayerWon()) {
+		printf("Someone won.\n");
+		finished = true;
+	}
+
+		// if no blank space, game is finished.
+	if (!containsBlankSpace()) {
+		finished = true;
+	}
+
+	return finished;
+}
+
+bool Board::hasPlayerWon()
+{
+	// FIX THIS SHIT
+
+	int r;
+	int c;
+
+		// check vertical matches, row is locked
+	r = 2;
+	for (c = 0; c < globals::COLS; c++) {
+		if ( (m_iconStates[r][c] == m_iconStates[r-1][c]) && (m_iconStates[r][c] == m_iconStates[r-2][c]) ) {
+			m_winner = m_iconStates[r][c];
+			if (m_winner != BLANK_STATE) break;
+			break;
+		}
+	}
+
+	if (m_winner == BLANK_STATE) {
+			// check horizontal matches, column is locked
+		c = 2;
+		for (r = 0; r < globals::ROWS; r++) {
+			if ( (m_iconStates[r][c] == m_iconStates[r][c-1]) && (m_iconStates[r][c] == m_iconStates[r][c-2]) ){
+				m_winner = m_iconStates[r][c];
+				if (m_winner != BLANK_STATE) break;
+			}
+		}
+	}
+
+	if (m_winner == BLANK_STATE) {
+			// check diagonol matches
+		if ( ( m_iconStates[0][0] == m_iconStates[1][1] && m_iconStates[0][0] == m_iconStates[2][2] ) ||
+			( m_iconStates[0][2] == m_iconStates[1][1] && m_iconStates[0][2] == m_iconStates[2][0] ) )
+		{
+				// if a diagonol one, has to be the middle icon
+			m_winner = m_iconStates[1][1];
+		}
+	}
+
+	if (m_winner != BLANK_STATE) printf("THEN WE FUCKING RETURN TRUE.\n");
+		// if winner is O or X (aka not BLANK_STATE), then the user has won
+	return (m_winner != BLANK_STATE);
+}
+
+bool Board::containsBlankSpace()
+{
+	bool success = false;
+
+	for (int r = 0; r < globals::ROWS; r++)
+		for (int c = 0; c < globals::COLS; c++)
+			if (m_iconStates[r][c] == BLANK_STATE)
+				success = true;
+
+	return success;
+}
+
 /*
- * Private member functions
+ * Graphics functions
  */
 
 void Board::drawLines()
@@ -127,11 +254,6 @@ void Board::drawIcons()
 			}
 		}
 	}
-}
-
-void Board::fillSquare(int r, int c, IconState icon)
-{
-	m_iconStates[r][c] = icon;
 }
 
 void Board::clearBoard()
@@ -174,26 +296,33 @@ void Board::generateIconRects()
 bool Board::loadMedia()
 {
 	// initialize textures to nullptr
-	m_menuScreen = nullptr;
-	m_gameScreen = nullptr;
+	for (int i = 0; i < TOTAL_SCREENS; i++)
+		m_screenTextures[i] = nullptr;
 	for (int i = 0; i < TOTAL_ICON_TEXTURES; i++) {
 		m_iconTextures[i] = nullptr;
 	}
 
-	// menu and game screen
-	m_menuScreen = loadImage("../content/menuscreen.png", m_renderer);
-	m_gameScreen = loadImage("../content/gamescreen.png", m_renderer);
-	// icons
-	m_iconTextures[O_TEXTURE] = loadImage("../content/o.png", m_renderer);
-	m_iconTextures[X_TEXTURE] = loadImage("../content/x.png", m_renderer);
+		// for CONTENT_PATH
+	using namespace globals;
+		// game screens
+	m_screenTextures[MENU_SCREEN] = loadImage((CONTENT_PATH + "menu_screen.png").c_str(), m_renderer);
+	m_screenTextures[GAME_SCREEN] = loadImage((CONTENT_PATH + "game_screen.png").c_str(), m_renderer);
+	m_screenTextures[O_WIN_SCREEN] = loadImage((CONTENT_PATH + "o_win.png").c_str(), m_renderer);
+	m_screenTextures[X_WIN_SCREEN] = loadImage((CONTENT_PATH + "x_win.png").c_str(), m_renderer);
+		// for when neither player wins
+	m_screenTextures[BLANK_WIN_SCREEN] = loadImage((CONTENT_PATH + "blank_win.png").c_str(), m_renderer);
+	m_screenTextures[RESTART_SCREEN] = loadImage((CONTENT_PATH + "restart.png").c_str(), m_renderer);
+		// icons
+	m_iconTextures[O_TEXTURE] = loadImage((CONTENT_PATH + "o_icon.png").c_str(), m_renderer);
+	m_iconTextures[X_TEXTURE] = loadImage((CONTENT_PATH + "x_icon.png").c_str(), m_renderer);
 
-	if (m_menuScreen == nullptr || m_gameScreen == nullptr ||
-		m_iconTextures[O_TEXTURE] == nullptr || m_iconTextures[X_TEXTURE] == nullptr)
-	{
-		return false;
-	}
-	else {
-		return true;
-	}
+	bool success = true;
+	for (int i = 0; i < TOTAL_SCREENS; i++)
+		if (m_screenTextures[i] == nullptr)
+			success = false;
+	for (int i = 0; i < TOTAL_ICON_TEXTURES; i++)
+		if (m_iconTextures[i] == nullptr)
+			success = false;
+	return success;
 }
 
