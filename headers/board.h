@@ -35,6 +35,22 @@ namespace line {
 	const int SECOND_HORIZ_Y = FIRST_HORIZ_Y + BOX_LENGTH + LINE_WIDTH;
 }
 
+	// colors
+namespace colors {
+		// background color - currently white
+	const Uint8 BG_R = 0xFF;
+	const Uint8 BG_G = 0xFF;
+	const Uint8 BG_B = 0xFF;
+		// flash color (for flashing screen when game is won) - currently light blue
+	const Uint8 FLASH_R = 0x4E;
+	const Uint8 FLASH_G = 0xEA;
+	const Uint8 FLASH_B = 0xF2;
+		// color to draw the lines on the board
+	const Uint8 LINE_R = 0x00;
+	const Uint8 LINE_G = 0x00;
+	const Uint8 LINE_B = 0x00;
+}
+
 enum LineRects {
 	FIRST_VERT,
 	SECOND_VERT,
@@ -57,13 +73,6 @@ enum IconState {
 	BLANK_STATE
 };
 
-// for our icon array
-enum IconTextureIndex {
-	O_TEXTURE,
-	X_TEXTURE,
-	TOTAL_ICON_TEXTURES
-};
-
 // keep track of the game state
 enum GameStatus {
 	MENU,
@@ -73,10 +82,20 @@ enum GameStatus {
 	TOTAL_STATES
 };
 
+// for our icon array
+enum IconTextureIndex {
+	O_TEXTURE,
+	O_TEXTURE_FLASH,
+	X_TEXTURE,
+	X_TEXTURE_FLASH,
+	TOTAL_ICON_TEXTURES
+};
+
 // keep track of screen textures
 enum ScreenTextureIndex {
 	MENU_SCREEN,
 	GAME_SCREEN,
+	GAME_SCREEN_FLASH,
 	O_WIN_SCREEN,
 	X_WIN_SCREEN,
 	BLANK_WIN_SCREEN,	// "win screen" for when neither player wins

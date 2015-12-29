@@ -39,7 +39,9 @@ Board::~Board()
 
 void Board::drawBoard()
 {
-	SDL_SetRenderDrawColor(m_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+	using namespace colors;
+
+	SDL_SetRenderDrawColor(m_renderer, BG_R, BG_G, BG_B, 0xFF);
 	SDL_RenderClear(m_renderer);
 
 	if (m_gameStatus == MENU) {
@@ -56,7 +58,7 @@ void Board::drawBoard()
 			m_gameStatus = GAME_FINISHED;
 		}
 	}
-	
+
 	else if (m_gameStatus == GAME_FINISHED) {
 			// flash the screen
 		bool flash = false;
@@ -64,17 +66,18 @@ void Board::drawBoard()
 				// change the render draw color
 			if (flash) {
 					// teal-ish color
-				SDL_SetRenderDrawColor(m_renderer, 0x4E, 0xEA, 0xF2, 0xFF);
+				SDL_SetRenderDrawColor(m_renderer, FLASH_R, FLASH_G, FLASH_B, 0xFF);
 				SDL_RenderClear(m_renderer);
 				flash = false;
 			}
 			else {
-				SDL_SetRenderDrawColor(m_renderer, 0xFF, 0xFF, 0xFF, 0xFF);
+				SDL_SetRenderDrawColor(m_renderer, BG_R, BG_G, BG_B, 0xFF);
 				SDL_RenderClear(m_renderer);
 				flash = true;
 			}
-				
+
 				// draw the rest of the board
+			SDL_RenderCopy(m_renderer, m_screenTextures[GAME_SCREEN], nullptr, nullptr);
 			drawLines();
 			drawIcons();
 				// push the renderer to the screen
@@ -83,6 +86,10 @@ void Board::drawBoard()
 			SDL_Delay(500);
 		}
 
+			// reset draw color to BG color, clear the renderer
+		SDL_SetRenderDrawColor(m_renderer, BG_R, BG_G, BG_B, 0xFF);
+		SDL_RenderClear(m_renderer);
+
 			// find out who won, render the respective screen
 		if (m_winner == O_STATE) {
 			SDL_RenderCopy(m_renderer, m_screenTextures[O_WIN_SCREEN], nullptr, nullptr);
@@ -90,9 +97,7 @@ void Board::drawBoard()
 		else if (m_winner == X_STATE) {
 			SDL_RenderCopy(m_renderer, m_screenTextures[X_WIN_SCREEN], nullptr, nullptr);
 		}
-			// if neither side won
 		else if (m_winner == BLANK_STATE) {
-				// note: BLANK_WIN_SCREEN is when neither player wins
 			SDL_RenderCopy(m_renderer, m_screenTextures[BLANK_WIN_SCREEN], nullptr, nullptr);
 		}
 			// update the renderer
@@ -244,7 +249,8 @@ bool Board::containsBlankSpace()
 
 void Board::drawLines()
 {
-	SDL_SetRenderDrawColor(m_renderer, 0x00, 0x00, 0x00, 0x00);
+	using namespace colors;
+	SDL_SetRenderDrawColor(m_renderer, LINE_R, LINE_G, LINE_B, 0xFF);
 	for (int i = 0; i < TOTAL_LINE_RECTS; i++) {
 		SDL_RenderFillRect(m_renderer, &m_lineRects[i]);
 	}
@@ -315,19 +321,24 @@ bool Board::loadMedia()
 		m_iconTextures[i] = nullptr;
 	}
 
-		// for CONTENT_PATH
+		// for CONTENT_PATH and the colors for flashing
 	using namespace globals;
+	using namespace colors;
 		// game screens
 	m_screenTextures[MENU_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "menu_screen.png");
 	m_screenTextures[GAME_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "game_screen.png");
+		// flashing, color keyed
+	m_screenTextures[GAME_SCREEN_FLASH] = loadImage(m_renderer, CONTENT_PATH + "game_screen.png", true, FLASH_R, FLASH_G, FLASH_B);
 	m_screenTextures[O_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "o_win.png");
 	m_screenTextures[X_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "x_win.png");
 		// for when neither player wins
 	m_screenTextures[BLANK_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "blank_win.png");
 	m_screenTextures[RESTART_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "restart.png");
-		// icons
+		// icons, and flashing icons
 	m_iconTextures[O_TEXTURE] = loadImage(m_renderer, CONTENT_PATH + "o_icon.png");
 	m_iconTextures[X_TEXTURE] = loadImage(m_renderer, CONTENT_PATH + "x_icon.png");
+	m_iconTextures[O_TEXTURE_FLASH] = loadImage(m_renderer, CONTENT_PATH + "o_icon.png", true ,FLASH_R, FLASH_G, FLASH_B);
+	m_iconTextures[X_TEXTURE_FLASH] = loadImage(m_renderer, CONTENT_PATH + "x_icon.png", true ,FLASH_R, FLASH_G, FLASH_B);
 
 	bool success = true;
 	for (int i = 0; i < TOTAL_SCREENS; i++)

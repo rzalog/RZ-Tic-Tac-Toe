@@ -6,7 +6,7 @@
 #include "utilities.h"
 
 	// NOTE, haveColorKey, R, G, B all have default arguments
-SDL_Texture* loadImage(SDL_Renderer* renderer, std::string path, bool haveColorKey, Uint32 R, Uint32 G, Uint32 B)
+SDL_Texture* loadImage(SDL_Renderer* renderer, std::string path, bool haveColorKey, Uint8 R, Uint8 G, Uint8 B)
 {
 	// final texture
 	SDL_Texture* newTexture = nullptr;
@@ -17,6 +17,10 @@ SDL_Texture* loadImage(SDL_Renderer* renderer, std::string path, bool haveColorK
 		printf("Unable to load image %s. SDL_image error: %s\n", path.c_str(), IMG_GetError());
 	}
 	else {
+			// color key image
+		if (haveColorKey) {
+			SDL_SetColorKey(loadedSurface, SDL_TRUE, SDL_MapRGB(loadedSurface->format, R, G, B));
+		}
 		newTexture = SDL_CreateTextureFromSurface(renderer, loadedSurface);
 		if (newTexture == nullptr) {
 			printf("Unable to create texture from %s. SDL Error: %s\n", path.c_str(), SDL_GetError());
