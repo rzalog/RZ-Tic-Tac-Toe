@@ -110,8 +110,6 @@ public:
 private:
 		// initializes an empty board
 	void initEmptyBoard();
-		// does things when the game is over
-	void gameOver();
 		// checks if game is finished
 	bool isGameFinished();
 		// checks if 3 in a row on the board

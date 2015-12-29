@@ -5,7 +5,8 @@
 #include <string>
 #include "utilities.h"
 
-SDL_Texture* loadImage(std::string path, SDL_Renderer* renderer)
+	// NOTE, haveColorKey, R, G, B all have default arguments
+SDL_Texture* loadImage(SDL_Renderer* renderer, std::string path, bool haveColorKey, Uint32 R, Uint32 G, Uint32 B)
 {
 	// final texture
 	SDL_Texture* newTexture = nullptr;

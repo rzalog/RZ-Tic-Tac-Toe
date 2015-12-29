@@ -138,7 +138,6 @@ void Board::handleEvent(const SDL_Event& event)
 			for (int r = 0; r < globals::ROWS; r++) {
 				for (int c = 0; c < globals::COLS; c++) {
 					if (m_iconStates[r][c] == BLANK_STATE && isPointInRect(mousex, mousey, m_iconRects[r][c])) {
-						printf("Changing icon...\n");
 						m_iconStates[r][c] = m_turn;
 						m_turn = (m_turn == O_STATE) ? X_STATE : O_STATE;
 					}
@@ -168,18 +167,12 @@ void Board::initEmptyBoard()
 	clearBoard();
 }
 
-void Board::gameOver()
-{
-
-}
-
 bool Board::isGameFinished()
 {
 	bool finished = false;
 	
 		// if one player got 3 in a row, the game is finished.
 	if (hasPlayerWon()) {
-		printf("Someone won.\n");
 		finished = true;
 	}
 
@@ -229,7 +222,6 @@ bool Board::hasPlayerWon()
 		}
 	}
 
-	if (m_winner != BLANK_STATE) printf("THEN WE FUCKING RETURN TRUE.\n");
 		// if winner is O or X (aka not BLANK_STATE), then the user has won
 	return (m_winner != BLANK_STATE);
 }
@@ -326,16 +318,16 @@ bool Board::loadMedia()
 		// for CONTENT_PATH
 	using namespace globals;
 		// game screens
-	m_screenTextures[MENU_SCREEN] = loadImage(CONTENT_PATH + "menu_screen.png", m_renderer);
-	m_screenTextures[GAME_SCREEN] = loadImage(CONTENT_PATH + "game_screen.png", m_renderer);
-	m_screenTextures[O_WIN_SCREEN] = loadImage(CONTENT_PATH + "o_win.png", m_renderer);
-	m_screenTextures[X_WIN_SCREEN] = loadImage(CONTENT_PATH + "x_win.png", m_renderer);
+	m_screenTextures[MENU_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "menu_screen.png");
+	m_screenTextures[GAME_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "game_screen.png");
+	m_screenTextures[O_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "o_win.png");
+	m_screenTextures[X_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "x_win.png");
 		// for when neither player wins
-	m_screenTextures[BLANK_WIN_SCREEN] = loadImage(CONTENT_PATH + "blank_win.png", m_renderer);
-	m_screenTextures[RESTART_SCREEN] = loadImage(CONTENT_PATH + "restart.png", m_renderer);
+	m_screenTextures[BLANK_WIN_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "blank_win.png");
+	m_screenTextures[RESTART_SCREEN] = loadImage(m_renderer, CONTENT_PATH + "restart.png");
 		// icons
-	m_iconTextures[O_TEXTURE] = loadImage(CONTENT_PATH + "o_icon.png", m_renderer);
-	m_iconTextures[X_TEXTURE] = loadImage(CONTENT_PATH + "x_icon.png", m_renderer);
+	m_iconTextures[O_TEXTURE] = loadImage(m_renderer, CONTENT_PATH + "o_icon.png");
+	m_iconTextures[X_TEXTURE] = loadImage(m_renderer, CONTENT_PATH + "x_icon.png");
 
 	bool success = true;
 	for (int i = 0; i < TOTAL_SCREENS; i++)
