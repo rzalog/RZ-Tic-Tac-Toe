@@ -105,9 +105,11 @@ void Board::drawBoard()
 			// let the user look at the win screen
 		SDL_Delay(1000);
 
-			// initialize empty board
-		initEmptyBoard();
-		m_gameStatus = BOARD;
+		m_gameStatus = ASK_RESTART;
+	}
+
+	else if (m_gameStatus == ASK_RESTART) {
+		SDL_RenderCopy(m_renderer, m_screenTextures[RESTART_SCREEN], nullptr, nullptr);
 	}
 
 	SDL_RenderPresent(m_renderer);
@@ -120,12 +122,17 @@ void Board::handleEvent(const SDL_Event& event)
 		switch (event.key.keysym.scancode)
 		{
 			case SDL_SCANCODE_T:
+					// 
 				if (m_gameStatus == MENU)
 					m_gameStatus = BOARD;
 				break;
 			case SDL_SCANCODE_R:
-				if (m_gameStatus == BOARD)
+					// user presses "r" to restart on the start screen
+				if (m_gameStatus == ASK_RESTART) {
 					initEmptyBoard();
+					m_gameStatus = BOARD;
+				}
+				break;
 
 			default:
 				break;
